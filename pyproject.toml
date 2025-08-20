@@ -20,15 +20,15 @@ ipython = "^9.4.0"
 [tool.black]
 line-length = 88
 target-version = ['py312']
-		exclude = '''
-				/(\
-						\.git
-					| \.mypy_cache
-					| \.venv
-					| build
-					| dist
-				)/
-		'''
+exclude = '''
+/(\
+    \.git
+    | \.mypy_cache
+    | \.venv
+    | build
+    | dist
+)/
+'''
 
 [build-system]
 requires = ["poetry-core"]
