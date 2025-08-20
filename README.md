@@ -15,13 +15,13 @@ The reusable `polls` app is located in the `src/polls` directory. If you want to
 2.  **Run database migrations**
 
     ```bash
-    python manage.py migrate
+    poetry run python manage.py migrate
     ```
 
 3.  **Start the development server**
 
     ```bash
-    python manage.py runserver
+    poetry run python manage.py runserver
     ```
 
     You can access the polls app at `/polls/`.
@@ -29,5 +29,5 @@ The reusable `polls` app is located in the `src/polls` directory. If you want to
 4.  **Run tests**
 
     ```bash
-    pytest
+    poetry run pytest
     ```
