@@ -17,7 +17,9 @@ class VoteViewTests(TestCase):
         response = self.client.post(url, {"choice": choice.id})
 
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response["Location"], reverse("polls:results", args=(question.id,)))
+        self.assertEqual(
+            response["Location"], reverse("polls:results", args=(question.id,))
+        )
 
         choice.refresh_from_db()
         self.assertEqual(choice.votes, 1)
